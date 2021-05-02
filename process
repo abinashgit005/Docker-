@@ -1,0 +1,20 @@
+yum install docker -y          #to download the docker in Amazon-linux.
+docker images                  #to see all the images inside your local machine.
+docker search <image_name>     # to search the image in docker HUB.
+docker pull<image_name>        # to download the image from docker HUB to your local machine.
+docker run -it --name abidevops ubuntu /bin/bash.
+                          # -it stands for interactive mode & terminal.
+                          # we can write as -i -t as well.
+                          # run will create and start.
+                          # here abidevops is the new name i want to give to the contaiber.
+                          # Ubuntu is thge image name to which i want to create and give a name.
+service docker status          # to see service has start or not.
+docker start <container name>  # to start the container
+docker stop <container_name>   # to stop the container.
+docker rm <container_name>     # to delete container.
+docker attach <container_name> # to go insude the container.
+docker ps # to see all the containers.
+          # PS stands for process status
+docker ps -a # to see all the containers including in stopped stage.
+
+inside a container if you want to see the os-release then, cat /etc/os-release.
